@@ -7,7 +7,7 @@ public String doYourJob() {
 }
 
 public String fly() {
-    return "I belive I can fly";
+    return "I believe I can fly";
 }
     
 }
