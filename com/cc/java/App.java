@@ -7,32 +7,29 @@ public class App {
        Queen queen = new Queen();
        Worker worker = new Worker();
        Drone drone = new Drone();
+       
+
+
 
         // 1. Iteration Super-/Subklassen -----//
 
         pollObj(queen);    
         pollObj(worker);    
         pollObj(drone);
+       
+       //-- Das sollte eigentlich nicht gehen! We don´t do this (wir schreiben eine Subklasse)--//
+        HoneyBee honeyBee = new HoneyBee();
+        pollObj(honeyBee);
 
     }
 
-    private static void pollObj(Queen obj) {
+    // ---- 3. Iteration Polymorphie -----//
+    private static void pollObj(HoneyBee obj) {
         output(obj.doYourJob());
         output(obj.fly());
         output("-------------");
     }
 
-    private static void pollObj(Worker obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-------------");
-    }
-
-    private static void pollObj(Drone obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-        output("-------------");
-    }
    
    
     private static void output(String outputStr) {
