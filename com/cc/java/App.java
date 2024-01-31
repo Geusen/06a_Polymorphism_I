@@ -20,7 +20,6 @@ public class App {
        //-- Das sollte eigentlich nicht gehen! We don´t do this (wir schreiben eine Subklasse)--//
         HoneyBee honeyBee = new HoneyBee();
         pollObj(honeyBee);
-
     }
 
     // ---- 3. Iteration Polymorphie -----//
